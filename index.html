@@ -5,41 +5,77 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Bora Codar #01- Player de Música</title>
+    <title>Bora Codar #06 - Cartão de embarque</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 <body>
-    <div id="app">
-        <div id="painel">
-            <div id="bill">1 + 1</div>
-            <div id="result">
-                <div id="operations">=</div>
-                <div id="value">2</div>
-            </div>
-        </div>
-
-        <div id="keyboard">
-            <div class="keyboardNumber restartKey">CE</div>
-            <div class="keyboardNumber">C</div>
-            <div class="keyboardNumber">%</div>
-            <div class="keyboardNumber specialKeys">÷</div>
-            <div class="keyboardNumber">7</div>
-            <div class="keyboardNumber">8</div>
-            <div class="keyboardNumber">9</div>
-            <div class="keyboardNumber specialKeys">X</div>
-            <div class="keyboardNumber">4</div>
-            <div class="keyboardNumber">5</div>
-            <div class="keyboardNumber">6</div>
-            <div class="keyboardNumber specialKeys">-</div>
-            <div class="keyboardNumber">1</div>
-            <div class="keyboardNumber">2</div>
-            <div class="keyboardNumber">3</div>
-            <div class="keyboardNumber specialKeys">+</div>
-            <div class="keyboardNumber">+/-</div>
-            <div class="keyboardNumber">0</div>
-            <div class="keyboardNumber">,</div>
-            <div class="keyboardNumber resultKeys">=</div>
-        </div>
+    <div id="boarding-pass">
+        <h1>Cartão de embarque</h1>
+        <main id="ticket">
+            <select class="flight">
+                <div>
+                    <div class="number">
+                        <p>Voo</p>
+                        <strong>RS995</strong>
+                    </div>
+                    <div class="date">
+                        <p>Data</p>
+                        <strong>23/05/2023</strong>
+                    </div>
+                </div>
+                <div>
+                    <div class="departure">
+                        <p>São Paulo, Brasil</p>
+                        <strong>GRU</strong>
+                        <time>17:00</time>
+                    </div>
+                    <div class="airplane">
+                        <img src="">
+                    </div>
+                    <div class="arrival">
+                        <p>São Francisco, EUA</p>
+                        <strong>SFO</strong>
+                        <time>4:48 <sup>+1</sup></time>
+                    </div>
+                </div>
+            </select>
+            <select class="middle">
+                <div class="name">
+                    <p>Passageiro</p>
+                    <strong>João Mangueira</strong>
+                </div>
+                <div class="seat">
+                    <p>Assento</p>
+                    <strong>28A</strong>
+                </div>
+            </select>
+            <select class="bottom">
+                <div class="container">
+                    <div class="boarding-info">
+                        <dl>
+                            <dt>
+                                <p>Embarque</p>
+                                <time>16:15</time>
+                            </dt>
+                            <dt>
+                                <p>Terminal</p>
+                                <strong>2</strong>
+                            </dt>
+                            <dt>
+                                <p>Portão</p>
+                                <strong>15</strong>
+                            </dt>
+                        </dl>
+                    </div>
+                    <div class="qrcode">
+                        <img src="">
+                        <p>Grupo de embarque: 3</p>
+                    </div>
+                </div>
+                <p><strong>Atenção:</strong> o portão fecha as 16:45</p>
+            </select>
+        </main>
+        <footer>Qualquer problema procure o balcão de atendimento da sua campanhia aérea</footer>
     </div>
 </body>
 </html>
