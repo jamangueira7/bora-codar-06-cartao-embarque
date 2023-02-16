@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
     <title>Bora Codar #06 - Cartão de embarque</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
@@ -12,8 +14,8 @@
     <div id="boarding-pass">
         <h1>Cartão de embarque</h1>
         <main id="ticket">
-            <select class="flight">
-                <div>
+            <section class="top">
+                <div class="flight">
                     <div class="number">
                         <p>Voo</p>
                         <strong>RS995</strong>
@@ -23,14 +25,14 @@
                         <strong>23/05/2023</strong>
                     </div>
                 </div>
-                <div>
+                <div class="grip">
                     <div class="departure">
                         <p>São Paulo, Brasil</p>
                         <strong>GRU</strong>
                         <time>17:00</time>
                     </div>
                     <div class="airplane">
-                        <img src="">
+                        <img src="" alt=""/>
                     </div>
                     <div class="arrival">
                         <p>São Francisco, EUA</p>
@@ -38,8 +40,8 @@
                         <time>4:48 <sup>+1</sup></time>
                     </div>
                 </div>
-            </select>
-            <select class="middle">
+            </section>
+            <section class="middle">
                 <div class="name">
                     <p>Passageiro</p>
                     <strong>João Mangueira</strong>
@@ -48,8 +50,8 @@
                     <p>Assento</p>
                     <strong>28A</strong>
                 </div>
-            </select>
-            <select class="bottom">
+            </section>
+            <section class="bottom">
                 <div class="container">
                     <div class="boarding-info">
                         <dl>
@@ -68,14 +70,16 @@
                         </dl>
                     </div>
                     <div class="qrcode">
-                        <img src="">
+                        <img src="" alt="">
                         <p>Grupo de embarque: 3</p>
                     </div>
                 </div>
                 <p><strong>Atenção:</strong> o portão fecha as 16:45</p>
-            </select>
+            </section>
         </main>
-        <footer>Qualquer problema procure o balcão de atendimento da sua campanhia aérea</footer>
+        <footer>
+            Qualquer problema procure o balcão de atendimento da sua campanhia aérea
+        </footer>
     </div>
 </body>
 </html>
