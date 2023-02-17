@@ -59,10 +59,14 @@ strong {
 section {
     background-color: white;
     padding: 2.4rem 3.2rem;
+
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #boarding-pass {
-    max-width: 32.7rem;
     margin: auto;
 }
 
@@ -73,6 +77,12 @@ section {
 .top {
     border-radius: 2.4rem 2.4rem 0 0;
     gap: 2.4rem;
+    --mask: radial-gradient(
+            1.2rem at 1.2rem bottom, transparent 93%, black
+    ) -1.2rem;
+
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: repeat-x;
 }
 
 .departure, .arrival {
@@ -98,13 +108,41 @@ section {
     line-height: 1.2rem;
 }
 
+.middle {
+    border: 1px dashed rgba(0, 0, 0, 0.32);
+    border-left: 0;
+    border-right: 0;
+
+    --mask: radial-gradient(
+            1.2rem at 1.2rem 1.2rem, transparent 93%, black
+    ) -1.2rem -1.2rem;
+}
+
 .bottom {
     border-radius: 0 0 2.4rem 2.4rem;
+    --mask: radial-gradient(
+            1.2rem at 1.2rem top, transparent 93%, black
+    ) -1.2rem;
+
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: repeat-x;
 }
 
 .bottom .container {
     align-items: center;
     gap: .8rem;
+}
+
+dt time {
+    color: white;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    background: #63388C;
+    border-radius: .8rem;
+    padding: .4rem .8rem;
+    display: inline-block;
+    margin-top: .2rem;
 }
 
 .bottom > p {
@@ -113,6 +151,10 @@ section {
     font-size: 1.6rem;
     line-height: 2rem;
     color: rgba(0, 0, 0, 0.8);
+}
+
+.qrcode.grid {
+    justify-items: center;
 }
 
 dl.grid {
