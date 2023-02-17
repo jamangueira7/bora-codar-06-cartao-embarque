@@ -11,6 +11,22 @@
   <img alt="app" src=".github/img.png">
 </p>
 
+<p align="center">
+  <img alt="app" src=".github/img_1.png">
+</p>
+
+<p align="center">
+  <img alt="app" src=".github/img_2.png">
+</p>
+
+<p align="center">
+  <img alt="app" src=".github/img_3.png">
+</p>
+
+<p align="center">
+  <img alt="app" src=".github/img_4.png">
+</p>
+
 
 ## Bora Codar 06 - Cartão de embarque
 
